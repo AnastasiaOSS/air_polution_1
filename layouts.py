@@ -1,6 +1,5 @@
 import dash_bootstrap_components as dbc
 from dash import html, dcc
-#import datetime as dt
 
 def create_layout():
     return dbc.Container([

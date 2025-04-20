@@ -5,6 +5,7 @@ from callbacks import register_callbacks
 
 app = Dash(external_stylesheets=[dbc.themes.QUARTZ]) 
 app.title = "Дашборд состояния воздуха в городе"
+server = app.server
 
 app.layout = create_layout()
 
@@ -12,4 +13,4 @@ register_callbacks(app)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
