@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-/* Основные стили  здесь определяется цвет фона документа и размер базового шрифта*/
-
 body {
     font-family: 'Merriweather', sans-serif;
     font-size: 16px; 
@@ -10,8 +8,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* блок с заголовками */
 
 .header {
     text-align: center;
@@ -22,8 +18,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
 }
 
-/* главный заголовок */
-
 .header-title{
     font-size: 64px;
     margin-bottom: 10px;
@@ -31,14 +25,12 @@ body {
 
 }
 
-/* подзаголовок-описание */
 
 .header-description{
     font-size: 40px;
     color: #7f8c8d
 }
 
-/* фильтры */
 
 .filters-row {
     background-color: #EBFFFF;
@@ -60,7 +52,6 @@ body {
     font-size: 16px;
 }
 
-/* информационная панель */
 
 .stats-panel {
     margin-top: 20px;
@@ -77,7 +68,6 @@ body {
     font-size: 25px;
 }
 
-/* Графики */
 
 .dash-graph{
    border-radius: 10px;
