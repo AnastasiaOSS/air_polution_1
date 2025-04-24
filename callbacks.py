@@ -29,32 +29,32 @@ def register_callbacks(app):
 
         co_fig = go.Figure(
            data=[go.Scatter(x=data['hours'], y=data['co'], mode='lines+markers', name='Концентрация оксида углерода (CO)')],
-           layout=go.Layout(title='Концентрация оксида углерода (CO) в воздухе по часам', xaxis_title='Время', yaxis_title='(CO), мг/м³', template='plotly_dark')
+           layout=go.Layout(title='Концентрация оксида углерода (CO)', xaxis_title='Время', yaxis_title='(CO), мг/м³', template='plotly_dark')
         )
 
         no2_fig = go.Figure(
            data=[go.Scatter(x=data['hours'], y=data['no2'], mode='lines+markers', name='Концентрация диоксида азота (NO2)')], 
-           layout=go.Layout(title='Концентрация диоксида азота (NO2) в воздухе по часам', xaxis_title='Время', yaxis_title='(NO2), мг/м³', template='plotly_dark')
+           layout=go.Layout(title='Концентрация диоксида азота (NO2)', xaxis_title='Время', yaxis_title='(NO2), мг/м³', template='plotly_dark')
         )
 
         o3_fig = go.Figure(
            data=[go.Scatter(x=data['hours'], y=data['o3'], mode='lines+markers', name='Концентрация озона (O3)')],    
-           layout=go.Layout(title='Концентрация озона (O3) в воздухе по часам', xaxis_title='Время', yaxis_title='(O3), мг/м³', template='plotly_dark')
+           layout=go.Layout(title='Концентрация озона (O3)', xaxis_title='Время', yaxis_title='(O3), мг/м³', template='plotly_dark')
         )
 
         so2_fig = go.Figure(
            data=[go.Scatter(x=data['hours'], y=data['so2'], mode='lines+markers', name='Концентрация углекислого газа (CO₂)')],
-           layout=go.Layout(title='Концентрация углекислого газа (CO₂) в воздухе по часам', xaxis_title='Время', yaxis_title='(CO₂), ppm', template='plotly_dark')
+           layout=go.Layout(title='Концентрация углекислого газа (CO₂)', xaxis_title='Время', yaxis_title='(CO₂), ppm', template='plotly_dark')
         )
 
         pm2_5_fig = go.Figure(
            data=[go.Scatter(x=data['hours'], y=data['pm2_5'], mode='lines+markers', name='Концентрация микроскопических частиц')],
-           layout=go.Layout(title='Концентрация микроскопических частиц в воздухе', xaxis_title='Время', yaxis_title='мкг/м³', template='plotly_dark') 
+           layout=go.Layout(title='Концентрация микроскопических частиц', xaxis_title='Время', yaxis_title='мкг/м³', template='plotly_dark') 
         )
 
         pm10_fig = go.Figure(
            data=[go.Scatter(x=data['hours'], y=data['pm10'], mode='lines+markers', name='Концентрация крупной пыли')],
-           layout=go.Layout(title='Концентрация крупной пыли в воздухе', xaxis_title='Время', yaxis_title='мкг/м³', template='plotly_dark') 
+           layout=go.Layout(title='Концентрация крупной пыли', xaxis_title='Время', yaxis_title='мкг/м³', template='plotly_dark') 
         )
 
 
