@@ -6,9 +6,10 @@ def create_layout():
         dbc.NavbarSimple(
             brand = "🫧 Состояние воздуха в городе💨🌿",
             brand_href = "#",
-            color = "primary",
+            color = "rgba(0, 255, 255, 0.13)",
             dark = False,
-            className= "mb-4 flex justify-content-between",
+            className= "mb-4 d-flex justify-content-center align-items-center",
+            style={'fontSize': '30px'},  
         ),
         dbc.Row([
             dbc.Col([dbc.Card(id="air-output", body=True)], width=6, xs=12, md=6),
