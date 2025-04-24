@@ -12,7 +12,11 @@ aqi = 'yes'
 
 def load_data(city):
     response = requests.get(API_URL, params= {'key': API_KEY, 'q': city, 'days': DAYS, 'aqi': aqi,'lang': LANG}) 
-    data = response.json()
+    if response.status_code == 200:
+        data = response.json()
+    # Обработка данных
+    else:
+        print("Ошибка:", response.status_code, response.text)    
 
     location = data['location']
     forecast_hours = data['forecast']['forecastday'][0]['hour']
